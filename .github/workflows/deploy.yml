@@ -25,7 +25,7 @@ jobs:
       - name: Build Zola
         uses: getzola/github-pages@v1
         with:
-          zola_version: 0.22.0 # Specify your Zola version here
+          zola_version: v0.22.1 # Specify your Zola version here
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
