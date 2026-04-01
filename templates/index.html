@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 class="welcome">Welcome to my page!</h1>
+
+    <div class="hk-frame">
+
+      <!-- Top bracket -->
+      <div class="hk-bracket">
+        <svg viewBox="0 0 520 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <!-- left outer curl -->
+            <path d="M 10 72 Q 4 65 10 58 Q 16 52 22 58 Q 18 64 12 60"/>
+            <!-- left arm sweep -->
+            <path d="M 18 62 Q 80 55 160 42 Q 200 34 218 22"/>
+            <!-- left inner curl -->
+            <path d="M 218 22 Q 226 10 232 18 Q 236 26 228 30 Q 222 32 220 26"/>
+            <!-- right outer curl -->
+            <path d="M 510 72 Q 516 65 510 58 Q 504 52 498 58 Q 502 64 508 60"/>
+            <!-- right arm sweep -->
+            <path d="M 502 62 Q 440 55 360 42 Q 320 34 302 22"/>
+            <!-- right inner curl -->
+            <path d="M 302 22 Q 294 10 288 18 Q 284 26 292 30 Q 298 32 300 26"/>
+            <!-- center diamond -->
+            <path d="M 260 8 L 272 20 L 260 32 L 248 20 Z"/>
+            <!-- top spike -->
+            <path d="M 260 8 L 260 2"/>
+            <!-- left side curl -->
+            <path d="M 248 20 Q 238 14 234 20 Q 230 28 238 32 Q 244 34 246 28"/>
+            <!-- right side curl -->
+            <path d="M 272 20 Q 282 14 286 20 Q 290 28 282 32 Q 276 34 274 28"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Content box -->
+      <div class="hk-box">
+        <div class="hk-box-inner">
+            <div class="tags"><p class="tags-text">Rust Developer</p><p class="tags-other-text">Whatever else you imagine me to be</p><p class="tags-text">Flutter Developer</p></div>
+            <h2>I'm Monish</h2>
+        </div>
+      </div>
+
+<svg style="width:600px; max-width:100%; overflow:visible;" viewBox="0 0 600 310" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- bottom ornament -->
+    <path d="M 50 18 Q 44 25 50 32 Q 56 38 62 32 Q 58 26 52 30"/>
+    <path d="M 58 28 Q 120 35 200 48 Q 240 56 258 68"/>
+    <path d="M 258 68 Q 266 80 272 72 Q 276 64 268 60 Q 262 58 260 64"/>
+    <path d="M 550 18 Q 556 25 550 32 Q 544 38 538 32 Q 542 26 548 30"/>
+    <path d="M 542 28 Q 480 35 400 48 Q 360 56 342 68"/>
+    <path d="M 342 68 Q 334 80 328 72 Q 324 64 332 60 Q 338 58 340 64"/>
+    <path d="M 300 82 L 312 70 L 300 58 L 288 70 Z"/>
+    <path d="M 300 82 L 300 90"/>
+    <path d="M 288 70 Q 278 76 274 70 Q 270 62 278 58 Q 284 56 286 62"/>
+    <path d="M 312 70 Q 322 76 326 70 Q 330 62 322 58 Q 316 56 314 62"/>
+    <!-- Projects arm -->
+    <path d="M 295 92 Q 230 110 170 140 Q 138 158 120 175"/>
+    <path d="M 166 142 Q 160 137 162 131 Q 165 125 170 130"/>
+    <path d="M 120 175 Q 115 183 120 191 Q 125 197 120 203"/>
+    <path d="M 120 203 L 120 222"/>
+    <path d="M 120 222 L 129 232 L 120 242 L 111 232 Z"/>
+    <path d="M 120 242 L 120 250"/>
+    <!-- Blog arm -->
+    <path d="M 297 92 Q 272 115 248 143 Q 232 163 213 183"/>
+    <path d="M 245 146 Q 239 141 241 135 Q 244 129 249 134"/>
+    <path d="M 213 183 Q 208 191 213 199 Q 218 205 213 211"/>
+    <path d="M 213 211 L 213 222"/>
+    <path d="M 213 222 L 222 232 L 213 242 L 204 232 Z"/>
+    <path d="M 213 242 L 213 250"/>
+    <!-- About arm -->
+    <path d="M 303 92 Q 328 115 352 143 Q 368 163 387 183"/>
+    <path d="M 355 146 Q 361 141 359 135 Q 356 129 351 134"/>
+    <path d="M 387 183 Q 392 191 387 199 Q 382 205 387 211"/>
+    <path d="M 387 211 L 387 222"/>
+    <path d="M 387 222 L 396 232 L 387 242 L 378 232 Z"/>
+    <path d="M 387 242 L 387 250"/>
+    <!-- Skills arm -->
+    <path d="M 305 92 Q 370 110 430 140 Q 462 158 480 175"/>
+    <path d="M 434 142 Q 440 137 438 131 Q 435 125 430 130"/>
+    <path d="M 480 175 Q 485 183 480 191 Q 475 197 480 203"/>
+    <path d="M 480 203 L 480 222"/>
+    <path d="M 480 222 L 489 232 L 480 242 L 471 232 Z"/>
+    <path d="M 480 242 L 480 250"/>
+  </g>
+
+  <a href="/projects/" class="button">
+    <rect x="46" y="252" width="108" height="36" rx="18" fill="white"/>
+    <text x="100" y="270" font-family="'Fragment Mono', monospace" font-size="13" fill="black" text-anchor="middle" dominant-baseline="central" font-weight="600">Projects</text>
+  </a>
+  <a href="/blogs" class="button">
+    <rect x="160" y="252" width="100" height="36" rx="18" fill="white"/>
+    <text x="210" y="270" font-family="'Fragment Mono', monospace" font-size="13" fill="black" text-anchor="middle" dominant-baseline="central" font-weight="600">Blog</text>
+  </a>
+  <a href="/about/" class="button">
+    <rect x="340" y="252" width="100" height="36" rx="18" fill="white"/>
+    <text x="390" y="270" font-family="'Fragment Mono', monospace" font-size="13" fill="black" text-anchor="middle" dominant-baseline="central" font-weight="600">About</text>
+  </a>
+  <a href="/skills" class="button">
+    <rect x="446" y="252" width="108" height="36" rx="18" fill="white"/>
+    <text x="500" y="270" font-family="'Fragment Mono', monospace" font-size="13" fill="black" text-anchor="middle" dominant-baseline="central" font-weight="600">Skills</text>
+  </a>
+</svg>
+    </div>
+{% endblock content %}

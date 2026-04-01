@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="child-title">{{ section.title }}</h1>
+
+    <div class="blogs-list">
+        {% for page in section.pages %}
+        <div class="blogs-row">
+            <div class="blogs-row-content">
+                <h2>{{ page.title }}</h2>
+                <p>{{ page.description }}</p>
+            </div>
+            <a href="{{ page.permalink }}" class="button">
+                <svg style="width:120px;" viewBox="0 0 120 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="0" width="120" height="36" rx="18" fill="white"/>
+                    <text x="60" y="18" font-family="'Fragment Mono', monospace" font-size="13" fill="black" text-anchor="middle" dominant-baseline="central" font-weight="600">Read more</text>
+                </svg>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
