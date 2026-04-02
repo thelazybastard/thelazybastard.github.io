@@ -23,15 +23,25 @@
 }
 
 html, body {
-    overflow-x: hidden;
+    height: 100%;
+    overflow: hidden; /* prevent body from scrolling */
     max-width: 100%;
     background-color: black;
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    padding-bottom: 60px;
+    padding-bottom: 0; /* remove the 60px padding you had */
+}
+
+@media (max-width: 768px) {
+    body {
+        transform-origin: top left;
+        transform: scale(0.8);
+        width: calc(100% / 0.85); 
+    }
 }
 
 h1, h2, p, h3, footer, ul, li {
@@ -69,19 +79,31 @@ p, ul, li {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-shrink: 0; /* don't let it squish */
     position: sticky;
     top: 0;
+    z-index: 100;
     background-color: black;
     width: 100%;
     padding: 0 24px;
-    box-sizing: border-box;     
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;        
+    overflow: hidden; 
 }
 
-.main { 
-    margin: 0px;
+@media (max-width: 768px) {
+    .header {
+        height: 130px;   
+    }
+}
+
+.main {
+    flex: 1;          
+    overflow-y: auto;  
+    margin: 0;
     margin-top: -5px;
     margin-left: 10px;
     width: 99%;
@@ -91,18 +113,27 @@ p, ul, li {
     border-image: url('/images/image.png') 30 round;
 }
 
+@media (max-width: 768px) {
+    .main {
+        transform-origin: top center;
+        transform: scale(0.90);
+        width: calc(100% / 0.95);
+        margin: 0%;
+        margin-top: 4%;
+    }
+}
+
 footer {
+    flex-shrink: 0; 
+    position: static; 
     height: fit-content;
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #333;
-  color: white;
-  padding: 1rem;
-  z-index: 1000;
-  font-family: "Fragment Mono", monospace;
+    display: flex;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 1rem;
+    z-index: 1000;
+    font-family: "Fragment Mono", monospace;
 }
 
 #ascii-desktop, #ascii-mobile {
@@ -241,12 +272,11 @@ a.button:hover text {
 }
 
 .project-card {
-  border: 2px solid white;   /* border goes on the CARD, not its children */
+  border: 2px solid white;   
   padding: 1.5rem;
   box-sizing: border-box;
 }
 
-/* DELETE the .project-card > * block entirely — that's what caused the mess */
 
 .tech-stack {
   list-style: none;
