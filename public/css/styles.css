@@ -57,8 +57,10 @@ p, ul, li {
 
 .tags {
     display: flex;
+    justify-content: space-evenly;
     font-size: 12px;
     flex-wrap: wrap;
+    margin: 1%;
 }
 
 .tags-text {
@@ -66,6 +68,7 @@ p, ul, li {
 }
 
 .tags-other-text {
+    font-size: 10;
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -315,15 +318,15 @@ a.button:hover text {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 3rem auto 4rem;
-    width: min(400px, 95vw);
-    height: 480px;
+    margin: 1.5rem auto 2rem;
+    width: min(280px, 95vw);
+    height: 320px;
 }
 
 @media (max-width: 480px) {
     .pyramid-container {
         width: 95vw;
-        height: 372px;
+        height: 250px;
     }
 }
 
